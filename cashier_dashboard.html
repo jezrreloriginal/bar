@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Caixa</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .item-detail {
+            margin-bottom: 10px;
+        }
+        button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Dashboard Caixa</h1>
+        <input type="text" id="order-number" placeholder="Número do Pedido">
+        <button onclick="searchOrder()">Pesquisar Pedido</button>
+        <div id="order-details"></div>
+    </div>
+    <script src="scripts/cashier_dashboard.js"></script>
+</body>
+</html>

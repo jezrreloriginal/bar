@@ -1,0 +1,23 @@
+- index.html
+- login_employee.html
+- login_manager.html
+- manager_dashboard.html
+- orders.html
+- order_details.html
+- cashier.html
+- menu.html
+- scripts/
+  - products.js
+  - orders.js
+  - authentication.js
+  - sales.js
+  - menu.js
+  - printer.js
+  - tests/
+    - products.test.js
+    - orders.test.js
+    - authentication.test.js
+    - sales.test.js
+    - menu.test.js
+- styles/
+  - styles.css

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Funcionário</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .suggestion {
+            cursor: pointer;
+            padding: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .suggestion:hover {
+            background-color: #e9e9e9;
+        }
+
+        .item-detail {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">  
+        <h1>Dashboard Funcionário</h1>
+        <input type="text" id="order-number" placeholder="Número do Pedido">
+        <button onclick="searchOrder()">Pesquisar Pedido</button>
+        <div id="order-details"></div>
+
+        <h2>Adicionar Pedido</h2>
+        <input type="number" id="new-order-number" placeholder="Número do Pedido">
+        <div id="new-order-products">
+            <input type="text" placeholder="Produto" id="product-search" oninput="showProductSuggestions()">
+            <div id="product-suggestions"></div>
+            <input type="number" id="product-quantity" placeholder="Quantidade">
+            <input type="number" id="product-price" placeholder="Preço" readonly>
+            <div id="product-details"></div>
+            <button onclick="addProductToOrder()">Adicionar Produto</button>
+        </div>
+        <button onclick="confirmOrder()">Confirmar Pedido</button>
+    </div>
+    <script src="scripts/employee_dashboard.js"></script>
+</body>
+</html>

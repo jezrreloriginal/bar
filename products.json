@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "name": "Cerveja",
+            "price": 8.00,
+            "details": "Cerveja gelada de 500ml",
+            "image": "url_da_imagem_cerveja"
+        },
+        {
+            "name": "Caipirinha",
+            "price": 15.00,
+            "details": "Caipirinha com limão e cachaça",
+            "image": "url_da_imagem_caipirinha"
+        },
+        {
+            "name": "Vodka",
+            "price": 20.00,
+            "details": "Vodka pura de 300ml",
+            "image": "url_da_imagem_vodka"
+        },
+        {
+            "name": "Whisky",
+            "price": 25.00,
+            "details": "Whisky escocês de 500ml",
+            "image": "url_da_imagem_whisky"
+        },
+        {
+            "name": "Suco de Laranja",
+            "price": 10.00,
+            "details": "Suco de laranja natural de 500ml",
+            "image": "url_da_imagem_suco_laranja"
+        }
+    ]
+}

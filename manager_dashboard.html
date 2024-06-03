@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Gerente</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Dashboard Gerente</h1>
+        <nav>
+            <button onclick="showSection('metrics')">Métricas de Vendas</button>
+            <button onclick="showSection('search-orders')">Pesquisar Pedidos</button>
+            <button onclick="showSection('paid-orders')">Pedidos Pagos</button>
+            <button onclick="showSection('pending-orders')">Pedidos Pendentes</button>
+            <button onclick="showSection('order-history')">Histórico de Pedidos</button>
+            <button onclick="showSection('add-product')">Adicionar Produto</button>
+        </nav>
+        <div id="metrics" class="section">
+            <h2>Métricas de Vendas</h2>
+            <canvas id="salesChart"></canvas>
+        </div>
+        <div id="search-orders" class="section" style="display: none;">
+            <h2>Pesquisar Pedidos</h2>
+            <input type="text" id="search-order-input" placeholder="Digite o número do pedido">
+            <button onclick="searchOrder()">Pesquisar</button>
+            <div id="order-details"></div>
+        </div>
+        <div id="paid-orders" class="section" style="display: none;">
+            <h2>Pedidos Pagos</h2>
+            <div id="paid-orders-list"></div>
+            <div id="total-paid"></div>
+        </div>
+        <div id="pending-orders" class="section" style="display: none;">
+            <h2>Pedidos Pendentes</h2>
+            <div id="pending-orders-list"></div>
+            <div id="total-pending"></div>
+        </div>
+        <div id="order-history" class="section" style="display: none;">
+            <h2>Histórico de Pedidos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número do Pedido</th>
+                        <th>Data</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-history-list"></tbody>
+            </table>
+        </div>
+        <div id="add-product" class="section" style="display: none;">
+            <h2>Adicionar Produto</h2>
+            <input type="text" id="product-name" placeholder="Nome do Produto">
+            <input type="number" id="product-price" placeholder="Preço do Produto">
+            <textarea id="product-details" placeholder="Detalhes do Produto"></textarea>
+            <input type="text" id="product-image" placeholder="URL da Imagem do Produto">
+            <button onclick="addProduct()">Adicionar</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/manager_dashboard.js"></script>
+</body>
+</html>
